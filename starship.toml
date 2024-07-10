@@ -104,6 +104,7 @@ style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
+disabled = true
 symbol = ""
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
@@ -124,6 +125,6 @@ format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
+time_format = "%I:%M%p" # 12-hour clock with lowercase am/pm and without seconds #"%R" # Hour:Minute Format
 style = "bg:#33658A"
 format = '[ $time ]($style)'

@@ -56,6 +56,7 @@ alias spico='sedit'
 alias nano='edit'
 alias snano='sedit'
 alias vim='nvim'
+#<<<<<<< Updated upstream
 
 # Replace batcat with cat on Fedora as batcat is not available as a RPM in any form
 if command -v lsb_release > /dev/null; then
@@ -67,6 +68,9 @@ if command -v lsb_release > /dev/null; then
         alias cat='batcat'
     fi
 fi
+#=======
+alias cat='bat'
+#>>>>>>> Stashed changes
 
 # To have colors for ls and all grep commands such as grep, egrep and zgrep
 export CLICOLOR=1
@@ -121,7 +125,7 @@ alias da='date "+%Y-%m-%d %A %T %Z"'
 # Alias's to modified commands
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='trash -v'
+#alias rm='trash -v'
 alias mkdir='mkdir -p'
 alias ps='ps auxf'
 alias ping='ping -c 10'
@@ -683,4 +687,6 @@ elif [ -f "/usr/share/autojump/autojump.bash" ]; then
 else
 	echo "can't found the autojump script"
 fi
+
+neofetch
 
